@@ -1,3 +1,5 @@
+/*mobile navigatiion */
+
 function openNav() {
 	let x = window.matchMedia("(max-width: 768px)");
 	let openBtn = document.querySelector(".openBtn");
@@ -34,4 +36,27 @@ function closeNav() {
 	x.addListener(myFunction);
 } 
 
+/*form validation */
 
+					const email = document.getElementById("email"); 
+          const errorMsg = document.querySelector(".errorMsg");
+          
+          function validate() {
+            var isError = false;
+            var errMessage = "";
+            
+            if (email.value === "" || email.value.match(/.*\@.*\.\w{2,3}/g) === null){
+            isError = true;
+            errMessage += "Please insert a Valid Email";
+            
+           } 
+           if (isError) {
+            errorMsg.textContent = errMessage;
+            email.style.border = "1px solid red";
+            email.style.color = "red";
+            return false;
+           } else {
+            email.style.color = "none";
+            return true;
+           }
+          }

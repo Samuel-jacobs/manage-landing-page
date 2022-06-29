@@ -166,10 +166,14 @@
   <footer id="footer">
     <div class="footer-wrapper">
       <div class="footer-form">
-        <form action="#">
-          <input type="text" placeholder="Updates in your inbox…">
-          <button class="btn1" type="submit">Go</button>
+        <form  onsubmit="return validate()" method="POST">
+          <input type="text" id="email" name="email" placeholder="Updates in your inbox…">
+          
+          <button class="btn1" name="submit" type="submit">Go</button>
         </form>
+        <p class="errorMsg" style="color: red; padding: 10px;"></p>
+        <p class="successMsg"></p>
+        
         <p class="copyright pt-3">Copyright 2020. All Rights Reserved</p>
       </div>
       <div class="footer-links">
