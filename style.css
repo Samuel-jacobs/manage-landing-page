@@ -436,7 +436,7 @@ header {
         visibility: visible;
     }
     
-    /* left or forward direction */
+    /* left or forward direction  */
     .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .carousel-item-next.carousel-item-left + .carousel-item,
     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
@@ -515,3 +515,17 @@ header {
 		display: none;
 	}
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	.topnav {
+		padding: 50px;
+	}
+	#banner {
+		padding: 0 50px;
+	}
+	#different {
+		padding: 50px;
+	}
+	#footer {
+		padding: 50px;
+	}
+}	
